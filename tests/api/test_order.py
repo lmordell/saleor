@@ -613,7 +613,7 @@ def test_draft_order_create(
         type=order_events.OrderEvents.DRAFT_CREATED
     )
     assert created_draft_event.user == staff_user
-    assert created_draft_event.parameters == {}
+    assert created_draft_event.parameters == ''
 
 
 def test_draft_order_update(
